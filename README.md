@@ -109,10 +109,7 @@ The 19 rules trace back to **14 core contributors** spanning **10 debate groups*
 
 Additional contributors whose ideas shaped the overall framework: **Daniel Kahneman** (System 1/2 — anti-bias architecture), **Confucius** (contextual adaptation), **Rachel Carson** (tracing systemic interconnections), **Niels Bohr** (complementarity — allowing contradictory frameworks to coexist).
 
-<<<<<<< HEAD
 For the full intellectual genealogy with direct quotes from each debate contribution, see [`简体中文版本/llm-rules-construction.md`](简体中文版本/llm-rules-construction.md).
-=======
->>>>>>> a68c62b1b6273f6bb9a7e7552d00822012e5a7e5
 
 ## Design Philosophy
 
