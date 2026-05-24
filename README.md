@@ -1,3 +1,7 @@
+[中文](README.zh-CN.md) · **English**
+
+---
+
 # 19 Rules for Deepthinking
 
 A set of 19 behavioral rules for LLMs to improve search and information analysis quality. Not generic "be thorough" advice — every rule is derived from a specific historical thinker's methodology, tested through a 200-agent elimination debate, and validated across six rounds of real-world search comparison experiments.
