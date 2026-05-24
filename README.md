@@ -1,6 +1,6 @@
-# LLM Search Rules — 搜索与信息分析行为准则
+# 19 Rules for Deepthinking
 
-A set of 19 behavioral rules for LLMs to improve search and information analysis quality. Not generic "be thorough" advice — every rule is derived from a specific historical thinker's methodology, tested through a 200-agent elimination debate, and validated across four rounds of real-world search comparison experiments.
+A set of 19 behavioral rules for LLMs to improve search and information analysis quality. Not generic "be thorough" advice — every rule is derived from a specific historical thinker's methodology, tested through a 200-agent elimination debate, and validated across six rounds of real-world search comparison experiments.
 
 ## How This Was Built
 
@@ -24,7 +24,7 @@ The debate output (1.9MB, 880 utterances) was distilled into `SKILL.md` — a hu
 
 ### 3. Empirical Validation
 
-Every rule was tested across four rounds of controlled comparison experiments:
+Every rule was tested across six rounds of controlled comparison experiments (normal search vs. rule-based search):
 
 | Round | Question | Key Finding |
 |-------|----------|-------------|
@@ -32,8 +32,8 @@ Every rule was tested across four rounds of controlled comparison experiments:
 | 2 | Deep search | 4-layer depth progression uncovered structural tensions invisible to surface search |
 | 3 | Rule utility audit | All 22 original rules triggered; 7 overlapped pairs identified and merged to 19 |
 | 4 | "Medical industry gaps" | Rule 7 (define concepts first) caught a critical error: "gaps" had been narrowed to just "talent gaps" — proper operationalization revealed 6 distinct gap dimensions |
-| 5 | "AI's next wave" | Rule 2 (falsification first) exposed that the top 3 funded sectors (foundation models, humanoid robots, general AI agents) had the worst unit economics — the real opportunities were in "boring" vertical AI and code infrastructure |
-| 6 | "Are degrees losing value?" | Rules 13-18 (anti-bias + output gates) transformed a polarized yes/no debate into a structural analysis: the premium hadn't disappeared, it had bifurcated |
+| 5 | "AI's next wave" | Rule 2 (falsification first) exposed that the top 3 funded sectors (foundation models, humanoid robots, general AI agents) had the worst unit economics |
+| 6 | "Are degrees losing value?" | Rules 13-18 transformed a polarized yes/no debate into a structural analysis: the premium hadn't disappeared, it had bifurcated |
 
 ## The 19 Rules
 
@@ -109,7 +109,7 @@ The 19 rules trace back to **14 core contributors** spanning **10 debate groups*
 
 Additional contributors whose ideas shaped the overall framework: **Daniel Kahneman** (System 1/2 — anti-bias architecture), **Confucius** (contextual adaptation), **Rachel Carson** (tracing systemic interconnections), **Niels Bohr** (complementarity — allowing contradictory frameworks to coexist).
 
-For the full intellectual genealogy with direct quotes from each debate contribution, see `llm-rules-construction.md`.
+For the full intellectual genealogy with direct quotes from each debate contribution, see [`简体中文版本/llm-rules-construction.md`](简体中文版本/llm-rules-construction.md).
 
 ## Design Philosophy
 
@@ -122,29 +122,20 @@ Three principles guided the rules' construction:
 ## File Structure
 
 ```
-skill/
-├── README.md                          ← This file
-├── SKILL.md                           ← Educational document from debate output
-├── llm-rules.md                       ← 19 behavioral rules (Chinese, for LLM embedding)
-├── llm-rules-construction.md          ← Full intellectual genealogy with debate quotes
-├── llm-rules-en.md                    ← English version of the 19 rules
-├── engine/
-│   ├── tournament.py                  ← Roundtable tournament orchestrator
-│   ├── debate.py                      ← Group debate logic (4-round structure)
-│   └── llm.py                         ← LLM API layer (Anthropic-compatible)
-├── results/
-│   └── roundtable_20260524_181933/
-│       └── debate.md                  ← Full 1.9MB debate transcript (880 utterances)
-├── data/                              ← Agent definitions and group assignments
-├── docs/                              ← Design documents
-└── scripts/                           ← Utility scripts
+19-rules-for-deepthinking/
+├── README.md
+├── 简体中文版本/
+│   ├── SKILL.md                       ← Educational document from debate output
+│   ├── llm-rules.md                   ← 19 behavioral rules (for LLM embedding)
+│   └── llm-rules-construction.md      ← Full intellectual genealogy with debate quotes
+└── English version/
+    ├── SKILL-en.md                    ← English translation of SKILL.md
+    └── llm-rules-en.md                ← English version of the 19 rules
 ```
 
 ## Usage
 
 To use these rules with an LLM, embed `llm-rules.md` (Chinese) or `llm-rules-en.md` (English) into the system prompt or as a behavioral guideline document. The rules are designed to be self-executing — each rule specifies both a trigger condition and a required action.
-
-The English version is available in `llm-rules-en.md`.
 
 ## License
 
