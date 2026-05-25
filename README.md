@@ -35,9 +35,9 @@ Every rule was tested across six rounds of controlled comparison experiments (no
 | 1 | Basic comparison | Rule-based search produced concrete data vs. vague impressions |
 | 2 | Deep search | 4-layer depth progression uncovered structural tensions invisible to surface search |
 | 3 | Rule utility audit | All 22 original rules triggered; 7 overlapped pairs identified and merged to 19 |
-| 4 | "Medical industry gaps" | Rule 7 (define concepts first) caught a critical error: "gaps" had been narrowed to just "talent gaps" — proper operationalization revealed 6 distinct gap dimensions |
+| 4 | "Medical industry gaps" | Rule 1 (define concepts first) caught a critical error: "gaps" had been narrowed to just "talent gaps" — proper operationalization revealed 6 distinct gap dimensions |
 | 5 | "AI's next wave" | Rule 2 (falsification first) exposed that the top 3 funded sectors (foundation models, humanoid robots, general AI agents) had the worst unit economics |
-| 6 | "Are degrees losing value?" | Rules 13-18 transformed a polarized yes/no debate into a structural analysis: the premium hadn't disappeared, it had bifurcated |
+| 6 | "Are degrees losing value?" | Rules 10-16 (anti-bias + output gates) transformed a polarized yes/no debate into a structural analysis: the premium hadn't disappeared, it had bifurcated |
 
 ## The 19 Rules
 
@@ -45,49 +45,34 @@ Every rule was tested across six rounds of controlled comparison experiments (no
 
 | # | Rule | Source |
 |---|------|--------|
-| 1 | Rewrite vague questions into falsifiable conditional questions | Pasteur |
+| 1 | Rewrite vague questions into falsifiable conditional questions — including operational definitions, concept clarification, and constraint supplementation | Pasteur, Wittgenstein, Locke, Machiavelli |
 | 2 | Prioritize falsification — expose assumptions, search counterexamples first | Popper |
 | 3 | Use publicly verifiable data sources, not single-authority opinions | Pasteur |
-| 4 | Adapt search strategy based on intermediate results | Shannon, Kissinger |
+| 4 | Adapt search strategy based on intermediate results — with layered progression and contradiction drill-down | Shannon, Kissinger |
 
-### Query Reformulation
-
-| # | Rule | Source |
-|---|------|--------|
-| 5 | Replace abstract terms with operational definitions before searching | Wittgenstein, Sontag |
-| 6 | Supplement missing constraints (time range, resource limits, conflicts) | Machiavelli |
-| 7 | Define core concepts before deduction | Locke, Rawls |
-
-### Information Filtering
+### Operational Rules
 
 | # | Rule | Source |
 |---|------|--------|
-| 8 | No vague quantifiers ("many," "some," "everyone agrees") | Hayek |
-| 9 | Cross-confirm every conclusion with ≥3 independent sources | Pasteur, Nightingale |
-| 10 | Annotate every data point with original source and date | Nightingale, Hayek |
-
-### Search Depth
-
-| # | Rule | Source |
-|---|------|--------|
-| 11 | Progress through depth layers: surface → structured → reverse | Kissinger |
-| 12 | Generate finer-grained sub-queries when contradictions emerge | Kissinger, Shannon |
-
-### Anti-Bias
-
-| # | Rule | Source |
-|---|------|--------|
-| 13 | Include strongest supporting AND opposing arguments at equal length | Swartz (synthesizing Popper + Bohr) |
-| 14 | State explicitly under what conditions the conclusion fails | Popper, Lovelace |
-| 15 | Never use popularity or consensus as evidence of correctness | Hayek, Sontag |
+| 5 | Supplement missing constraints (time range, resource limits, conflicts) | Machiavelli |
+| 6 | No vague quantifiers ("many," "some," "everyone agrees") | Hayek |
+| 7 | Source quality declaration — annotate tier, date, and independence for every data point (rewritten from rigid "≥3 sources" rule) | Pasteur, Nightingale, Hayek |
+| 8 | Temporal consistency — align time windows before cross-source comparison **(NEW)** | — |
+| 9 | Drill down on contradictions — generate finer-grained sub-queries when signals conflict | Kissinger, Shannon |
+| 10 | Asymmetric evidence strength — label evidence tiers, not equal-length arguments (rewritten from equal-length pro/con) | Swartz, Popper |
+| 11 | State explicitly under what conditions the conclusion fails | Popper, Lovelace |
+| 12 | Never use popularity or consensus as evidence of correctness | Hayek, Sontag |
 
 ### Output Gates (self-check before every answer)
 
 | # | Rule | Source |
 |---|------|--------|
-| 16 | Verifiability — label unverifiable claims as speculation | Pasteur |
-| 17 | Conflicts of interest — flag sources with vested interests | Sontag, Carson |
-| 18 | Sample scope — flag survivorship bias when only success cases exist | Nightingale, Taleb |
+| 13 | Sample-population relationship — declare sampling method and limitations (expanded from survivorship bias only) | Nightingale, Taleb |
+| 14 | Verifiability — label unverifiable claims as speculation | Pasteur |
+| 15 | Conflicts of interest — flag sources with vested interests | Sontag, Carson |
+| 16 | Survivorship bias — flag when only visible/success cases exist | Nightingale, Taleb |
+| 17 | Counter-validation — search for data the conclusion cannot explain **(NEW)** | — |
+| 18 | Uncertainty quantification — confidence level for every core conclusion **(NEW)** | — |
 | 19 | Search blind spots — self-audit whether the search rules distorted the answer | Sontag, Swartz |
 
 ## Intellectual Genealogy
@@ -96,20 +81,20 @@ The 19 rules trace back to **14 core contributors** spanning **10 debate groups*
 
 | Contributor | Group | Contributed Rules |
 |-------------|-------|-------------------|
-| Louis Pasteur | 1 | 1, 3, 9, 16 |
-| Karl Popper | 2 | 2, 13, 14 |
-| Claude Shannon | 1 | 4, 12 |
-| Henry Kissinger | 1 | 4, 11, 12 |
-| Ludwig Wittgenstein | 2 | 5 |
-| Susan Sontag | 1 | 5, 17, 19 |
-| Niccolò Machiavelli | 1 | 6 |
-| John Locke | 1 | 7 |
-| John Rawls | 1 | 7 |
-| Friedrich Hayek | 1 | 8, 10, 15 |
-| Florence Nightingale | 2 | 9, 10, 18 |
-| Aaron Swartz | 16 (Finals) | 13, 19 |
-| Ada Lovelace | 16 | 14 |
-| Nassim Taleb | 10 | 18 |
+| Louis Pasteur | 1 | 1, 3, 7, 14 |
+| Karl Popper | 2 | 2, 10, 11 |
+| Claude Shannon | 1 | 4, 9 |
+| Henry Kissinger | 1 | 4, 9 |
+| Ludwig Wittgenstein | 2 | 1 |
+| Susan Sontag | 1 | 1, 15, 19 |
+| Niccolò Machiavelli | 1 | 1, 5 |
+| John Locke | 1 | 1 |
+| John Rawls | 1 | 1 |
+| Friedrich Hayek | 1 | 6, 7, 12 |
+| Florence Nightingale | 2 | 7, 13, 16 |
+| Aaron Swartz | 16 (Finals) | 10, 19 |
+| Ada Lovelace | 16 | 11 |
+| Nassim Taleb | 10 | 13, 16 |
 
 Additional contributors whose ideas shaped the overall framework: **Daniel Kahneman** (System 1/2 — anti-bias architecture), **Confucius** (contextual adaptation), **Rachel Carson** (tracing systemic interconnections), **Niels Bohr** (complementarity — allowing contradictory frameworks to coexist).
 
